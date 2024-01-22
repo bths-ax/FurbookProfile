@@ -62,8 +62,8 @@ export default function App() {
 						<img src={takotaProfile} className='pic' />
 						<h3>Takota McConner</h3>
 						<p className='list-group-item'>
-							"Laziness is nothing more than the habit of resting
-							before you get tired." -Jules Renard
+							&quot;Laziness is nothing more than the habit of
+							resting before you get tired.&quot; -Jules Renard
 						</p>
 					</div>
 
@@ -131,8 +131,8 @@ export default function App() {
 									</small>
 								</div>
 								<p>
-									Didn't do much today, just layed around and
-									ate food #yolo
+									Didn&apos;t do much today, just layed around
+									and ate food #yolo
 								</p>
 								<input placeholder='comment..' />
 							</a>
