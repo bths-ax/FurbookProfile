@@ -1,5 +1,19 @@
 import takotaProfile from './assets/takota.png'
 
+// eslint-disable-next-line react/prop-types
+function AboutHeading({ title }) {
+	return <p className='list-group-item heading'>{title}</p>
+}
+
+// eslint-disable-next-line react/prop-types
+function AboutItem({ title, desc }) {
+	return (
+		<p className='list-group-item'>
+			{title}: {desc}
+		</p>
+	)
+}
+
 export default function About() {
 	return (
 		<div className='container'>
@@ -15,26 +29,22 @@ export default function About() {
 
 				<div className='col-7 offset-1 about-box'>
 					<ul className='list-group'>
-						<p className='list-group-item heading'>About</p>
-						<p className='list-group-item'>Age: 12</p>
-						<p className='list-group-item'>Occupation: Pet</p>
-						<p className='list-group-item'>
-							Education: Wild Cat Academy
-						</p>
-						<p className='list-group-item'>
-							Favorite Bands: Cat Stevens, Def Leopard, Atomic
-							Kitten, Lionel Ritchie
-						</p>
-						<p className='list-group-item'>
-							Contact Info: Meow at me at the fence behind Burger
-							King on 242nd and Broadway
-						</p>
-						<p className='list-group-item'>
-							Relationship Status: Single
-						</p>
-						<p className='list-group-item'>
-							Places Lived: Paris, France and Bronx, New York
-						</p>
+						<AboutHeading title='About' />
+						<AboutItem title='Occupation' desc='Pet' />
+						<AboutItem title='Education' desc='Wild Cat Academy' />
+						<AboutItem
+							title='Favorite Bands'
+							desc='Cat Stevens, Def Leopard, Atomic Kitten, Lionel Ritchie'
+						/>
+						<AboutItem
+							title='Contact Info'
+							desc='Meow at me at the fence behind Burger King on 242nd and Broadway'
+						/>
+						<AboutItem title='Relationship Status' desc='Single' />
+						<AboutItem
+							title='Places Lived'
+							desc='Paris, France and Bronx, New York'
+						/>
 					</ul>
 				</div>
 			</div>
